@@ -12,3 +12,5 @@
 ### 如果能掌握这些更好：
   - 学会求助Google和Stack Overflow
 
+本书的在线预览地址：https://www.gitbook.com/book/zurl/c-cpp-debug/
+
