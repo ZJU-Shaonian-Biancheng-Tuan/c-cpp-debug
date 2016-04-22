@@ -13,7 +13,7 @@
   - 学会求助Google和Stack Overflow
 
 ### 索引
-  - ![目录](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/SUMMARY.md)
-  - ![第零章 代码书写建议](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/chapter0.md)
-  - ![第一章 错误的分类](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/chapter1.md)
-  - ![第五章 逻辑错误](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/chapter5.md)
+  - [目录](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/SUMMARY.md)
+  - [第零章 代码书写建议](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/chapter0.md)
+  - [第一章 错误的分类](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/chapter1.md)
+  - [第五章 逻辑错误](https://github.com/ZJU-Shaonian-Biancheng-Tuan/c-cpp-debug/blob/master/chapter5.md)
