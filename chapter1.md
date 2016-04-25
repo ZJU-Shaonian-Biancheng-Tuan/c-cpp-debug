@@ -40,6 +40,10 @@
 
 ## 第四节 输出和预期不符
 
+> Program testing can be used to show the presence of bugs, but never to show their absence!  
+> 程序测试只能证明错误的存在，但不能证明错误不存在！  
+> —— E.W.Dijkstra (*"Notes On Structured Programming"*, 1970) (计算机科学家, 1972年图灵奖得主)
+
 这里有一点经验想和大家分享。对于一个程序员，至少要知道以下常识：
 
 编译通过，不代表程序是正确的。  
