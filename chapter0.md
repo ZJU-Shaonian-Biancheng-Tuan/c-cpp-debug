@@ -108,5 +108,99 @@ int main() {
 * 大括号不换行/换行统一
 * 空格统一
 
+### 可供参考的常见代码格式化模板
+
+* `while`
+```c
+while (i < 10) {
+    printf("%d", i);
+    i--;
+}
+```
+* `do-while`
+```c
+do {
+    printf("%d", i);
+    i++;
+} while(i < 10)
+```
+* `for`
+```c
+for (int i = 0; i < 10; i++) {
+    printf("%d", i);
+}
+```
+* `switch`
+```c
+switch (c) {
+    case 'A': {
+        printf("You got 90!");
+        break;
+    }
+    case 'B': {
+        printf("You got 80!");
+        break;
+    }
+    default: {
+        printf("You lose.");
+    }
+}
+```
+
+* `if-else`
+```c
+if (a < 0) {
+    printf("less than 0");
+} else if (a < 20) {
+    printf("0 <= a < 20");
+} else if (a < 90) {
+    printf("20 <= a < 90");
+} else {
+    printf("a >= 90");
+}
+```
+
 ## 变量命名规则
-占位符
+### 常用的变量名规则
+    
+* `camelCase` - 驼峰式
+    
+    这种命名方式将单词首位相接，并首字母小写，其余首字母大写
+    
+    如：`numberOfDigits`, `longLongAgo`, `numberOfDaysInThisMonth`, `getNumberFromUser`
+
+* `PascalCase` - 帕斯卡式
+    
+    这种命名方式因Pascal语言而得名，他与驼峰命名法的区别就是首字母也大写
+
+    如：`ToString`, `GetNumber`, `CreateHttpRequest`
+
+* `snake_case`
+
+    这种命名方式中所有字母小写，使用下划线 `_` 连接
+
+    如：`find_first_of`,  `unordered_map`, `from_chars`
+
+* ansi C 命名法（不建议）
+
+    这种命名方式常见于C标准库，主要是将单词中的元音字母尽量去除，来减少变量名的字数。
+
+    如：`strlen`(`string length`)，`strcmp`(`string compare`), `stdio`(`standard IO`)
+
+    这种做法主要是因为古老的C语言并不支持很长的变量名，以及古老的键盘打字很费力，降低字母数可以提高编码速度。因为会降低可读性，及现代的键盘已经十分轻便，所以现在已经不建议使用。
+
+* 匈牙利命名（已弃用）
+
+    匈牙利命名是由类型前缀后跟Pascal命名的变量构成，为了在不支持智能提示的编程环境中提醒程序员变量的类型，这种命名法常见于古老的 Win32 程序代码中，现在已经弃用
+
+    如：`lpszWindowName`, `lParam`, `hInstance`。
+
+
+
+### 使用有意义的名字做变量名
+
+对于表示数量或多少的变量，尽量使用能代表他们的意义的名词或名词短语作为变量名，比如`numberOfBanana`, `age`, `year`等
+
+对于表示状态的变量，应使用能代表这个短语命名，如`hasApple`, `hasHit`, `isHuman`，这样在写`if`语句的时候会使表述十分清楚，如`if (hasApple)`, `if (isHuman) `使表述十分清楚。
+
+对于函数，一般使用动词或动词短语来命名，比如`getNumber`, `printDigit`,这样的目的也是为了使表述更加清楚，如`int number = getNumber()`, `printDigit(number)`。
