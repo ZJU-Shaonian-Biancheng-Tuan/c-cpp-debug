@@ -205,7 +205,7 @@ int f(int *A, int n){ // get the minimum of A with size n
 
 相比之下，一个仅仅是改了变量名的版本：
 
-```
+```c
 int get_min(int *candidates, int size){
   int ans = candidates[0];
   for(int i = 1; i < size; i++)
