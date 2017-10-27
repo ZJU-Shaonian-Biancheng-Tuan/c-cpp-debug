@@ -204,3 +204,9 @@ if (a < 0) {
 对于表示状态的变量，应使用能代表这个短语命名，如`hasApple`, `hasHit`, `isHuman`，这样在写`if`语句的时候会使表述十分清楚，如`if (hasApple)`, `if (isHuman) `使表述十分清楚。
 
 对于函数，一般使用动词或动词短语来命名，比如`getNumber`, `printDigit`,这样的目的也是为了使表述更加清楚，如`int number = getNumber()`, `printDigit(number)`。
+
+### 使用无歧义的名字做变量名
+
+例如，当你需要一个表时间的变量时，一个可选的变量名是`now`，但是，一个更好的名字可能是`nowMs`来表示这个时间的单位是毫秒。变量类型无法提供更多的信息时，这个任务便落在了变量名上。同理，一个把时间(`int`)转换到`Time`类型的函数，可以叫`TimeFromUnix`，但可选的更好的名字也许是`TimeFromUnixMs`。
+
+另外，有一些常用的变量名其实并没有任何的实际含义，它们往往能使用在非常多的地方。例如：`data`, `state`, `value`, `object`, `instance`。
